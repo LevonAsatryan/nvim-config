@@ -1,5 +1,5 @@
 function ColorMePencils(color)
-	color = color or 'cyberdream'
+	color = color or 'tokyonight-night'
 	vim.cmd.colorscheme(color)
 	-- set the backround :so
 	vim.api.nvim_set_hl(0, "Normal", { bg = "none" });

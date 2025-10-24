@@ -1,5 +1,5 @@
 vim.cmd("set termguicolors")
-vim.cmd("colorscheme cyberdream")
+vim.cmd("colorscheme tokyonight-night")
 vim.cmd("set autoindent")
 vim.cmd("set hidden")
 vim.cmd("set number")

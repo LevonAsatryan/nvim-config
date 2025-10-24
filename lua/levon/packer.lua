@@ -6,7 +6,7 @@ return require('packer').startup(function(use)
   use 'wbthomason/packer.nvim'
   use "nvim-lua/plenary.nvim"
 	-- ColorScheme
-	use "scottmckendry/cyberdream.nvim"
+	use "folke/tokyonight.nvim"
 
 	-- telescope
   use {

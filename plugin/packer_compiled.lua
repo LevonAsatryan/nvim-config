@@ -79,11 +79,6 @@ _G.packer_plugins = {
     path = "/home/levon/.local/share/nvim/site/pack/packer/start/cmp-nvim-lsp",
     url = "https://github.com/hrsh7th/cmp-nvim-lsp"
   },
-  ["cyberdream.nvim"] = {
-    loaded = true,
-    path = "/home/levon/.local/share/nvim/site/pack/packer/start/cyberdream.nvim",
-    url = "https://github.com/scottmckendry/cyberdream.nvim"
-  },
   harpoon = {
     loaded = true,
     path = "/home/levon/.local/share/nvim/site/pack/packer/start/harpoon",
@@ -128,6 +123,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/levon/.local/share/nvim/site/pack/packer/start/telescope.nvim",
     url = "https://github.com/nvim-telescope/telescope.nvim"
+  },
+  ["tokyonight.nvim"] = {
+    loaded = true,
+    path = "/home/levon/.local/share/nvim/site/pack/packer/start/tokyonight.nvim",
+    url = "https://github.com/folke/tokyonight.nvim"
   },
   undotree = {
     loaded = true,
