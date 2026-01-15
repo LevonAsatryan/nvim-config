@@ -9,7 +9,7 @@ return require('packer').startup(function(use)
 
 	-- telescope
   use {
-	'nvim-telescope/telescope.nvim', tag = '0.1.8',
+		'nvim-telescope/telescope.nvim',
   }
 	-- tree sitter
 	use ('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
