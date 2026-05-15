@@ -49,8 +49,8 @@ local function save_profiles(threshold)
 end
 
 time([[Luarocks path setup]], true)
-local package_path_str = "/home/levonasatryan/.cache/nvim/packer_hererocks/2.1.1765228720/share/lua/5.1/?.lua;/home/levonasatryan/.cache/nvim/packer_hererocks/2.1.1765228720/share/lua/5.1/?/init.lua;/home/levonasatryan/.cache/nvim/packer_hererocks/2.1.1765228720/lib/luarocks/rocks-5.1/?.lua;/home/levonasatryan/.cache/nvim/packer_hererocks/2.1.1765228720/lib/luarocks/rocks-5.1/?/init.lua"
-local install_cpath_pattern = "/home/levonasatryan/.cache/nvim/packer_hererocks/2.1.1765228720/lib/lua/5.1/?.so"
+local package_path_str = "/Users/levonasatryan/.cache/nvim/packer_hererocks/2.1.1772148810/share/lua/5.1/?.lua;/Users/levonasatryan/.cache/nvim/packer_hererocks/2.1.1772148810/share/lua/5.1/?/init.lua;/Users/levonasatryan/.cache/nvim/packer_hererocks/2.1.1772148810/lib/luarocks/rocks-5.1/?.lua;/Users/levonasatryan/.cache/nvim/packer_hererocks/2.1.1772148810/lib/luarocks/rocks-5.1/?/init.lua"
+local install_cpath_pattern = "/Users/levonasatryan/.cache/nvim/packer_hererocks/2.1.1772148810/lib/lua/5.1/?.so"
 if not string.find(package.path, package_path_str, 1, true) then
   package.path = package.path .. ';' .. package_path_str
 end
@@ -74,79 +74,121 @@ end
 time([[try_loadstring definition]], false)
 time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
+  ["barbar.nvim"] = {
+    loaded = true,
+    path = "/Users/levonasatryan/.local/share/nvim/site/pack/packer/start/barbar.nvim",
+    url = "https://github.com/romgrk/barbar.nvim"
+  },
+  ["barbecue.nvim"] = {
+    config = { "\27LJ\2\n6\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\rbarbecue\frequire\0" },
+    load_after = {},
+    loaded = true,
+    needs_bufread = false,
+    path = "/Users/levonasatryan/.local/share/nvim/site/pack/packer/opt/barbecue.nvim",
+    url = "https://github.com/utilyre/barbecue.nvim"
+  },
   catppuccin = {
     loaded = true,
-    path = "/home/levonasatryan/.local/share/nvim/site/pack/packer/start/catppuccin",
+    path = "/Users/levonasatryan/.local/share/nvim/site/pack/packer/start/catppuccin",
     url = "https://github.com/catppuccin/nvim"
   },
   ["cmp-nvim-lsp"] = {
     loaded = true,
-    path = "/home/levonasatryan/.local/share/nvim/site/pack/packer/start/cmp-nvim-lsp",
+    path = "/Users/levonasatryan/.local/share/nvim/site/pack/packer/start/cmp-nvim-lsp",
     url = "https://github.com/hrsh7th/cmp-nvim-lsp"
+  },
+  ["gitsigns.nvim"] = {
+    loaded = true,
+    path = "/Users/levonasatryan/.local/share/nvim/site/pack/packer/start/gitsigns.nvim",
+    url = "https://github.com/lewis6991/gitsigns.nvim"
   },
   harpoon = {
     loaded = true,
-    path = "/home/levonasatryan/.local/share/nvim/site/pack/packer/start/harpoon",
+    path = "/Users/levonasatryan/.local/share/nvim/site/pack/packer/start/harpoon",
     url = "https://github.com/theprimeagen/harpoon"
+  },
+  ["lualine.nvim"] = {
+    loaded = true,
+    path = "/Users/levonasatryan/.local/share/nvim/site/pack/packer/start/lualine.nvim",
+    url = "https://github.com/nvim-lualine/lualine.nvim"
   },
   ["mason-lspconfig.nvim"] = {
     loaded = true,
-    path = "/home/levonasatryan/.local/share/nvim/site/pack/packer/start/mason-lspconfig.nvim",
+    path = "/Users/levonasatryan/.local/share/nvim/site/pack/packer/start/mason-lspconfig.nvim",
     url = "https://github.com/mason-org/mason-lspconfig.nvim"
   },
   ["mason.nvim"] = {
     loaded = true,
-    path = "/home/levonasatryan/.local/share/nvim/site/pack/packer/start/mason.nvim",
+    path = "/Users/levonasatryan/.local/share/nvim/site/pack/packer/start/mason.nvim",
     url = "https://github.com/mason-org/mason.nvim"
   },
   ["nvim-cmp"] = {
     loaded = true,
-    path = "/home/levonasatryan/.local/share/nvim/site/pack/packer/start/nvim-cmp",
+    path = "/Users/levonasatryan/.local/share/nvim/site/pack/packer/start/nvim-cmp",
     url = "https://github.com/hrsh7th/nvim-cmp"
   },
   ["nvim-lspconfig"] = {
     loaded = true,
-    path = "/home/levonasatryan/.local/share/nvim/site/pack/packer/start/nvim-lspconfig",
+    path = "/Users/levonasatryan/.local/share/nvim/site/pack/packer/start/nvim-lspconfig",
     url = "https://github.com/neovim/nvim-lspconfig"
+  },
+  ["nvim-navic"] = {
+    loaded = true,
+    path = "/Users/levonasatryan/.local/share/nvim/site/pack/packer/start/nvim-navic",
+    url = "https://github.com/SmiteshP/nvim-navic"
   },
   ["nvim-treesitter"] = {
     loaded = true,
-    path = "/home/levonasatryan/.local/share/nvim/site/pack/packer/start/nvim-treesitter",
+    path = "/Users/levonasatryan/.local/share/nvim/site/pack/packer/start/nvim-treesitter",
     url = "https://github.com/nvim-treesitter/nvim-treesitter"
+  },
+  ["nvim-web-devicons"] = {
+    loaded = true,
+    path = "/Users/levonasatryan/.local/share/nvim/site/pack/packer/start/nvim-web-devicons",
+    url = "https://github.com/nvim-tree/nvim-web-devicons"
   },
   ["packer.nvim"] = {
     loaded = true,
-    path = "/home/levonasatryan/.local/share/nvim/site/pack/packer/start/packer.nvim",
+    path = "/Users/levonasatryan/.local/share/nvim/site/pack/packer/start/packer.nvim",
     url = "https://github.com/wbthomason/packer.nvim"
   },
   ["plenary.nvim"] = {
     loaded = true,
-    path = "/home/levonasatryan/.local/share/nvim/site/pack/packer/start/plenary.nvim",
+    path = "/Users/levonasatryan/.local/share/nvim/site/pack/packer/start/plenary.nvim",
     url = "https://github.com/nvim-lua/plenary.nvim"
   },
   ["telescope.nvim"] = {
     loaded = true,
-    path = "/home/levonasatryan/.local/share/nvim/site/pack/packer/start/telescope.nvim",
+    path = "/Users/levonasatryan/.local/share/nvim/site/pack/packer/start/telescope.nvim",
     url = "https://github.com/nvim-telescope/telescope.nvim"
   },
   undotree = {
     loaded = true,
-    path = "/home/levonasatryan/.local/share/nvim/site/pack/packer/start/undotree",
+    path = "/Users/levonasatryan/.local/share/nvim/site/pack/packer/start/undotree",
     url = "https://github.com/mbbill/undotree"
   },
   ["vim-fugitive"] = {
     loaded = true,
-    path = "/home/levonasatryan/.local/share/nvim/site/pack/packer/start/vim-fugitive",
+    path = "/Users/levonasatryan/.local/share/nvim/site/pack/packer/start/vim-fugitive",
     url = "https://github.com/tpope/vim-fugitive"
   },
   ["vim-prettier"] = {
     loaded = true,
-    path = "/home/levonasatryan/.local/share/nvim/site/pack/packer/start/vim-prettier",
+    path = "/Users/levonasatryan/.local/share/nvim/site/pack/packer/start/vim-prettier",
     url = "https://github.com/prettier/vim-prettier"
   }
 }
 
 time([[Defining packer_plugins]], false)
+-- Load plugins in order defined by `after`
+time([[Sequenced loading]], true)
+vim.cmd [[ packadd nvim-web-devicons ]]
+vim.cmd [[ packadd barbecue.nvim ]]
+
+-- Config for: barbecue.nvim
+try_loadstring("\27LJ\2\n6\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\rbarbecue\frequire\0", "config", "barbecue.nvim")
+
+time([[Sequenced loading]], false)
 
 _G._packer.inside_compile = false
 if _G._packer.needs_bufread == true then

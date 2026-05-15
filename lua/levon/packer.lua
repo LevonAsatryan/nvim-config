@@ -11,6 +11,32 @@ return require('packer').startup(function(use)
   use {
 		'nvim-telescope/telescope.nvim',
   }
+
+	-- barbecue, for wrapping line
+	use({
+ 	 "utilyre/barbecue.nvim",
+ 	 tag = "*",
+ 	 requires = {
+ 	   "SmiteshP/nvim-navic",
+ 	   "nvim-tree/nvim-web-devicons", -- optional dependency
+ 	 },
+ 	 after = "nvim-web-devicons", -- keep this if you're using NvChad
+ 	 config = function()
+ 	   require("barbecue").setup()
+ 	 end,
+	})
+
+	-- Status line
+	use {
+ 	 'nvim-lualine/lualine.nvim',
+ 	 requires = { 'nvim-tree/nvim-web-devicons', opt = true }
+	}
+
+	-- These optional plugins should be loaded directly because of a bug in Packer lazy loading
+	use 'nvim-tree/nvim-web-devicons' -- OPTIONAL: for file icons
+	use 'lewis6991/gitsigns.nvim' -- OPTIONAL: for git status
+	use 'romgrk/barbar.nvim'
+
 	-- tree sitter
 	use ('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
 	-- harpoon from primeagen
